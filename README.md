@@ -27,3 +27,26 @@ The Greenland Resort website aims to attract and inform potential guests, offeri
 
 - **Frontend**: React.js, HTML, CSS, JavaScript
 - **Deployment**: GitHub Pages
+
+
+### Commands
+
+1. **Start the Development Server**
+   Run this command to start the Vite development server:
+
+   ```bash
+   npm run dev
+   ```
+
+2. **Build the Project for Production**
+    Use this command to build the application for production:
+
+    ```bash
+   npm run build
+   ```
+
+3. **Deploy the Site to GitHub Pages**
+    To deploy the site to GitHub Pages, run:
+    ```bash
+    npm run deploy
+    ```
