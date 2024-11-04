@@ -1,0 +1,59 @@
+.navbar {
+    /* background-color: #2E8B57; */
+    background-color:  #F0E6D2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100vw;
+    height: 150px;
+    color: #FAF3E0;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    text-wrap: nowrap;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none; /* Hidden on larger screens */
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust icon size */
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        top: 60px; /* Position below the navbar */
+        left: 0;
+        right: 0;
+        background-color: #2E8B57; /* Navbar background color */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when menu is toggled */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger menu on smaller screens */
+    }
+}
